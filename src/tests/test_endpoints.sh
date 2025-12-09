@@ -23,5 +23,9 @@ test_endpoint "http://localhost:8000/" 302 "root endpoint"
 # Test the countries endpoint
 test_endpoint "http://localhost:8000/countries" 200 "countries endpoint"
 
+
+# Test the cities endpoint for England
+test_endpoint "http://localhost:8000/countries/England" 200 "cities endpoint for England"
+
 # Test the monthly average endpoint for London in January
 test_endpoint "http://localhost:8000/countries/England/London/January" 200 "monthly average endpoint for London in January"

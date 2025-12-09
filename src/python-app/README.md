@@ -1,1 +1,0 @@
-# A travel weather API
